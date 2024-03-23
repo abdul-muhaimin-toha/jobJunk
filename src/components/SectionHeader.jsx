@@ -1,5 +1,3 @@
-import React from "react";
-
 const SectionHeader = ({ title, subTitle }) => {
   return (
     <div className=" mx-auto mb-10 mt-20 max-w-xl p-4 md:mt-32">

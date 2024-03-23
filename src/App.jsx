@@ -1,4 +1,5 @@
 import AppliedJobs from "./components/AppliedJobs";
+import ErrorPage from "./components/ErrorPage";
 import Footer from "./components/Footer";
 import JobDetails from "./components/JobDetails";
 import Navbar from "./components/Navbar";
@@ -8,8 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <SecondaryPageHeader>Job Details</SecondaryPageHeader>
-      <AppliedJobs />
+      <ErrorPage />
       <Footer />
     </>
   );
