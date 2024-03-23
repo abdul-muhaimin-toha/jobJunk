@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div className="shadow-lg">
+    <div className="fixed left-0 top-0 z-50 w-full bg-white bg-opacity-95 shadow-lg">
       <div className="mx-auto max-w-screen-2xl p-1">
         <nav className="navbar">
           <div className="navbar-start">
@@ -70,7 +70,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="btn rounded-md border-none bg-primary text-white hover:bg-primary hover:bg-opacity-95 ">
+            <a className=" btn hidden rounded-md border-none bg-primary text-white hover:bg-primary hover:bg-opacity-95 md:flex ">
               Start Applying
             </a>
           </div>

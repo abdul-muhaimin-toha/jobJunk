@@ -3,7 +3,7 @@ const Hero = () => {
     <div className="bg-hero-pattern bg-cover bg-center bg-blend-multiply  ">
       <div className=" bg-gradient-to-b from-[#16161683] to-[#1616164f] ">
         <div className="mx-auto max-w-screen-2xl p-1">
-          <div className="hero min-h-[calc(100vh-76px)]">
+          <div className="hero min-h-screen">
             <div className="hero-content text-center">
               <div className="max-w-md">
                 <h1 className="text-5xl font-bold text-white">
