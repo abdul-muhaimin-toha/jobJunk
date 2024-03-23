@@ -4,7 +4,7 @@ const JobDetails = () => {
   return (
     <section>
       <div className="mx-auto max-w-screen-2xl px-4 py-12 md:py-32">
-        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3">
+        <div className="grid grid-cols-1 items-end gap-6 lg:grid-cols-3">
           <div className="col-span-1 flex flex-col p-2 text-black md:p-6 lg:col-span-2">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/250px-Google_2015_logo.svg.png"
@@ -82,7 +82,7 @@ const JobDetails = () => {
                 </p>
               </div>
             </div>
-            <div className="mt-4 flex items-center justify-center ">
+            <div className="mt-4 flex items-center justify-center md:mt-8 ">
               <a className=" btn w-full rounded-md border-none bg-primary text-white hover:bg-primary hover:bg-opacity-95">
                 See All Jobs
               </a>
