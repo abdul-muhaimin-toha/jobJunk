@@ -1,4 +1,5 @@
 import Footer from "./components/Footer";
+import JobDetails from "./components/JobDetails";
 import Navbar from "./components/Navbar";
 import SecondaryPageHeader from "./components/SecondaryPageHeader";
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Navbar />
       <SecondaryPageHeader>Job Details</SecondaryPageHeader>
+      <JobDetails />
       <Footer />
     </>
   );
