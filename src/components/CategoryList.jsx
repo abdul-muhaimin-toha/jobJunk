@@ -6,7 +6,7 @@ const CategoryList = () => {
   return (
     <section className="mx-auto mb-4 max-w-screen-2xl p-1">
       <SectionHeader
-        title="Job Category List"
+        title="Job Category"
         subTitle="Explore thousands of job opportunities with all the information you need. Its your future"
       />
       <div className="grid grid-cols-1 gap-6 px-4 md:grid-cols-2 lg:grid-cols-4">
