@@ -12,7 +12,7 @@ const FeaturedJobCard = () => {
         Technical Database Designer
       </h4>
       <p className="mb-4 text-lg">Google LLC</p>
-      <div className="gap mb-4 flex  flex-row gap-4">
+      <div className="gap mb-4 flex flex-col gap-4 md:flex-row">
         <p className="rounded-md border border-primary px-4 py-2 ">Remote</p>
         <p className="rounded-md border border-primary px-4 py-2 ">Full Time</p>
       </div>

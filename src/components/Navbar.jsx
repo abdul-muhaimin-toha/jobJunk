@@ -4,15 +4,15 @@ const Navbar = () => {
       <div className="mx-auto max-w-screen-2xl p-1">
         <nav className="navbar">
           <div className="navbar-start">
-            <div className="dropdown">
+            <div className="dropdown ">
               <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost hover:bg-transparent hover:text-primary lg:hidden"
+                className="btn btn-ghost p-0 pr-4 hover:bg-transparent hover:text-primary lg:hidden"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -70,8 +70,8 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className=" btn hidden rounded-md border-none bg-primary text-white hover:bg-primary hover:bg-opacity-95 md:flex ">
-              Start Applying
+            <a className=" btn  rounded-md border-none bg-primary text-white hover:bg-primary hover:bg-opacity-95 md:flex ">
+              Apply Now
             </a>
           </div>
         </nav>
