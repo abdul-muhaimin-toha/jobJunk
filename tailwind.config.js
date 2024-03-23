@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('./src/assets/bg-banner.jpg')",
-        "sectionHeader-pattern": "url('./src/assets/animatedBg.svg')",
-        "sectionFooter-pattern": "url('./src/assets/footer.svg')",
+        "hero-pattern": "url('/src/assets/bg-banner.jpg')",
+        "sectionHeader-pattern": "url('/src/assets/animatedBg.svg')",
+        "sectionFooter-pattern": "url('/src/assets/footer.svg')",
       },
     },
   },

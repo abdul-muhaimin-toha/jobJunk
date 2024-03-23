@@ -14,7 +14,10 @@ const Hero = () => {
                   information you need. Its your future. Come find it. Manage
                   all your job application from start to finish.
                 </p>
-                <a className="btn rounded-md border-none bg-primary text-base text-white hover:bg-primary hover:bg-opacity-95">
+                <a
+                  href="#featuredJobList"
+                  className="btn rounded-md border-none bg-primary text-base text-white hover:bg-primary hover:bg-opacity-95"
+                >
                   Start Applying
                 </a>
               </div>
