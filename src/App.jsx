@@ -1,3 +1,4 @@
+import AppliedJobs from "./components/AppliedJobs";
 import Footer from "./components/Footer";
 import JobDetails from "./components/JobDetails";
 import Navbar from "./components/Navbar";
@@ -8,7 +9,7 @@ function App() {
     <>
       <Navbar />
       <SecondaryPageHeader>Job Details</SecondaryPageHeader>
-      <JobDetails />
+      <AppliedJobs />
       <Footer />
     </>
   );
