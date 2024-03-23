@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         "hero-pattern": "url('./src/assets/bg-banner.jpg')",
         "sectionHeader-pattern": "url('./src/assets/animatedBg.svg')",
+        "sectionFooter-pattern": "url('./src/assets/footer.svg')",
       },
     },
   },

@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div className="bg-sectionHeader-pattern bg-cover bg-center shadow-lg">
+    <div className="bg-sectionFooter-pattern bg-cover bg-center shadow-lg">
       <div className="mx-auto max-w-screen-2xl p-1">
-        <footer className="footer flex flex-col justify-between p-10 text-black  md:flex-row">
+        <footer className="footer flex flex-col justify-between p-10 text-white  md:flex-row">
           <aside>
             <a className=" mb-4 text-3xl font-black hover:bg-transparent">
               jobJunk
