@@ -9,6 +9,7 @@ const FeaturedJobCard = ({ featuredJob }) => {
     company_name,
     remote_or_onsite,
     salary,
+    job_type,
     contact_information,
   } = featuredJob;
 
@@ -24,6 +25,9 @@ const FeaturedJobCard = ({ featuredJob }) => {
       <div className="gap mb-4 flex flex-col gap-4 md:flex-row">
         <p className="rounded-md border border-primary px-4 py-2 ">
           {remote_or_onsite}
+        </p>
+        <p className="rounded-md border border-primary px-4 py-2 ">
+          {job_type}
         </p>
       </div>
       <div className="mb-6 flex flex-col gap-3 font-medium text-black lg:flex-row">

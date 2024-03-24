@@ -5,7 +5,9 @@ import {
 } from "react-router-dom";
 import RootLayout from "./RootLayout";
 import Home, { FeaturedJobsAndCategoriesLoader } from "./pages/Home";
-import AppliedJobPage from "./pages/AppliedJobPage";
+import AppliedJobPage, {
+  AllJobsForAppliedJobsPage,
+} from "./pages/AppliedJobPage";
 import JobDetailsPage, { AllJobsLoader } from "./pages/JobDetailsPage";
 import ErrorPage from "./components/ErrorPage";
 import FeaturedJobsPage, { FeaturedJobsLoader } from "./pages/FeaturedJobsPage";
@@ -21,7 +23,11 @@ const router = createBrowserRouter(
         element={<Home />}
         loader={FeaturedJobsAndCategoriesLoader}
       />
-      <Route path="applied-jobs" element={<AppliedJobPage />} />
+      <Route
+        path="applied-jobs"
+        element={<AppliedJobPage />}
+        loader={AllJobsForAppliedJobsPage}
+      />
       <Route
         path="featured-jobs"
         element={<FeaturedJobsPage />}
