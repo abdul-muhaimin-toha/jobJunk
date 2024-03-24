@@ -129,7 +129,7 @@ const Navbar = () => {
           <div className="navbar-end">
             <Link
               to="/featured-jobs"
-              className=" rounded-md border-none bg-primary p-2.5 text-xs text-white hover:bg-primary hover:bg-opacity-95 md:flex md:items-center md:justify-center md:p-4 md:text-base "
+              className=" rounded-md border-none bg-primary p-2.5 text-xs text-white hover:bg-primary hover:bg-opacity-95 md:flex md:items-center md:justify-center md:p-3 md:text-base "
             >
               Apply Now
             </Link>
