@@ -28,8 +28,8 @@ export default Home;
 
 export const FeaturedJobsAndCategoriesLoader = async () => {
   const [c, j] = await Promise.all([
-    fetch("./categories.json"),
-    fetch("./jobs.json"),
+    fetch("/categories.json"),
+    fetch("/jobs.json"),
   ]);
   const jobCategories = await c.json();
   const featuredJobs = await j.json();

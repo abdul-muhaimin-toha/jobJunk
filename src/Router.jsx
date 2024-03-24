@@ -6,7 +6,7 @@ import {
 import RootLayout from "./RootLayout";
 import Home, { FeaturedJobsAndCategoriesLoader } from "./pages/Home";
 import AppliedJobPage from "./pages/AppliedJobPage";
-import JobDetailsPage from "./pages/JobDetailsPage";
+import JobDetailsPage, { AllJobsLoader } from "./pages/JobDetailsPage";
 import ErrorPage from "./components/ErrorPage";
 import FeaturedJobsPage, { FeaturedJobsLoader } from "./pages/FeaturedJobsPage";
 import JobCategoriesPage, {
@@ -32,7 +32,11 @@ const router = createBrowserRouter(
         element={<JobCategoriesPage />}
         loader={JobCategoriesLoader}
       />
-      <Route path="job-details/:jobId" element={<JobDetailsPage />} />
+      <Route
+        path="job-details/:jobId"
+        element={<JobDetailsPage />}
+        loader={AllJobsLoader}
+      />
       <Route path="*" element={<ErrorPage />} />
     </Route>,
   ),

@@ -1,7 +1,9 @@
 import { CiMap, CiDollar } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const FeaturedJobCard = ({ featuredJob }) => {
   const {
+    id,
     logo,
     job_title,
     company_name,
@@ -25,18 +27,25 @@ const FeaturedJobCard = ({ featuredJob }) => {
         </p>
       </div>
       <div className="mb-6 flex flex-col gap-3 font-medium text-black lg:flex-row">
-        <div className="flex items-center gap-2">
-          <CiMap className="text-xl text-primary" />
+        <div className="flex min-h-16 items-center gap-2">
+          <div>
+            <CiMap className="text-xl text-primary" />
+          </div>
           <p>{contact_information.address}</p>
         </div>
-        <div className="flex items-center gap-2">
-          <CiDollar className="text-xl text-primary" />
+        <div className="flex  items-center gap-2">
+          <div>
+            <CiDollar className="text-xl text-primary" />
+          </div>
           <p>Sallary: {salary} </p>
         </div>
       </div>
-      <a className="btn self-start rounded-md border-none bg-primary text-base text-white hover:bg-primary hover:bg-opacity-95">
+      <Link
+        to={`/job-details/${id}`}
+        className="btn self-start rounded-md border-none bg-primary text-base text-white hover:bg-primary hover:bg-opacity-95"
+      >
         view Details
-      </a>
+      </Link>
     </div>
   );
 };

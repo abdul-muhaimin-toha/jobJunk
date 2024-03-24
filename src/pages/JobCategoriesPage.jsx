@@ -17,6 +17,6 @@ const JobCategoriesPage = () => {
 export default JobCategoriesPage;
 
 export const JobCategoriesLoader = async () => {
-  const response = await fetch("./categories.json");
+  const response = await fetch("/categories.json");
   return response.json();
 };

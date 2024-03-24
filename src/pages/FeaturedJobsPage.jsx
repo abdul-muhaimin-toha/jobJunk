@@ -15,6 +15,6 @@ const FeaturedJobsPage = () => {
 export default FeaturedJobsPage;
 
 export const FeaturedJobsLoader = async () => {
-  const response = await fetch("./jobs.json");
+  const response = await fetch("/jobs.json");
   return response.json();
 };
