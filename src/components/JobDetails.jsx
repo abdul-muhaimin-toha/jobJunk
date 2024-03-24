@@ -49,8 +49,8 @@ const JobDetails = ({ targetedJob }) => {
   return (
     <section>
       <div className="mx-auto max-w-screen-2xl px-4 py-12 md:py-32">
-        <div className="grid grid-cols-1 items-end gap-6 lg:grid-cols-3">
-          <div className="col-span-1 flex flex-col p-2 text-black md:p-6 lg:col-span-2">
+        <div className="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3">
+          <div className="col-span-1 flex flex-col rounded-xl bg-white p-4 text-black md:p-6 lg:col-span-2">
             <img
               src={logo}
               alt={job_title}
@@ -66,7 +66,7 @@ const JobDetails = ({ targetedJob }) => {
             <p className="mb-4">{experiences}</p>
           </div>
           <div>
-            <div className="flex flex-col rounded-lg bg-slate-100 p-2 md:p-6">
+            <div className="flex flex-col rounded-lg bg-slate-100 p-4 md:p-6">
               <h4 className="mb-6  border-b-2 pb-3 text-lg font-black text-primary">
                 Job Details
               </h4>

@@ -14,7 +14,7 @@ const AppliedJobsCard = ({ appliedJob }) => {
   } = appliedJob;
 
   return (
-    <div className=" flex flex-col items-center justify-between gap-4 bg-blue-50 px-2 py-8 shadow-lg md:bg-none md:p-4 lg:flex-row lg:bg-white  ">
+    <div className="flex flex-col items-center justify-between gap-4 rounded-xl bg-blue-50 px-2 py-8 shadow-lg md:bg-none md:p-4 lg:flex-row lg:bg-white  ">
       <div className="flex items-center justify-center self-stretch  bg-blue-50 px-10 py-4">
         <img
           src={logo}

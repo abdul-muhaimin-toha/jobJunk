@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="Footer-pattern bg-sectionFooter-pattern bg-cover bg-right-top">
       <div className="mx-auto max-w-screen-2xl p-1">
-        <footer className="footer flex flex-col justify-between px-6 py-10   md:flex-row">
+        <footer className="footer flex flex-col justify-between px-6 py-10 text-accent-content md:flex-row">
           <aside>
             <Link
               to="/"

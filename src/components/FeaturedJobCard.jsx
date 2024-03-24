@@ -14,30 +14,30 @@ const FeaturedJobCard = ({ featuredJob }) => {
   } = featuredJob;
 
   return (
-    <div className="flex flex-col rounded-lg bg-slate-50 p-10 shadow-lg">
-      <img
-        src={logo}
-        alt={company_name}
-        className="object-fit mb-8 h-10 w-32"
-      />
-      <h4 className="mb-4 text-xl font-bold md:text-2xl">{job_title}</h4>
-      <p className="mb-4 text-lg">{company_name}</p>
+    <div className="flex flex-col rounded-lg  border-2 border-primary p-10 shadow-2xl">
+      <div className=" mb-8 flex items-center justify-center rounded-lg bg-white p-2">
+        <img src={logo} alt={company_name} className="object-fit  h-10 w-32" />
+      </div>
+      <h4 className="mb-4 text-xl font-bold text-primary md:text-2xl">
+        {job_title}
+      </h4>
+      <p className="mb-4 text-lg text-primary">{company_name}</p>
       <div className="gap mb-4 flex flex-col gap-4 md:flex-row">
-        <p className="rounded-md border border-primary px-4 py-2 ">
+        <p className="rounded-md border border-primary px-4 py-2 text-primary ">
           {remote_or_onsite}
         </p>
-        <p className="rounded-md border border-primary px-4 py-2 ">
+        <p className="rounded-md border border-primary px-4 py-2 text-primary ">
           {job_type}
         </p>
       </div>
       <div className="mb-6 flex flex-col gap-3 font-medium text-black lg:flex-row">
-        <div className="flex min-h-16 items-center gap-2">
+        <div className="flex min-h-16 items-center gap-2 text-primary">
           <div>
             <CiMap className="text-xl text-primary" />
           </div>
           <p>{contact_information.address}</p>
         </div>
-        <div className="flex  items-center gap-2">
+        <div className="flex  items-center gap-2 text-primary">
           <div>
             <CiDollar className="text-xl text-primary" />
           </div>

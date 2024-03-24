@@ -9,7 +9,7 @@ const Hero = () => {
                 <h1 className="animate__animated  text-5xl font-bold text-white">
                   One step closer to your dream job.
                 </h1>
-                <p className="animate__animated py-6 text-base-100">
+                <p className="animate__animated py-6 text-slate-50">
                   Explore thousands of job opportunities with all the
                   information you need. Its your future. Come find it. Manage
                   all your job application from start to finish.

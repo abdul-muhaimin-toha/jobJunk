@@ -8,7 +8,7 @@ const CategoryList = ({ jobCategories }) => {
         {jobCategories.map((jobCategory) => (
           <CategoryCard
             key={jobCategory.id}
-            icon={<CiBadgeDollar className="text-4xl text-primary" />}
+            icon={<CiBadgeDollar className="text-4xl text-white" />}
             heading={jobCategory.category_name}
             subHeading={jobCategory.availability}
           />
