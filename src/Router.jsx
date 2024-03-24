@@ -4,20 +4,34 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import RootLayout from "./RootLayout";
-import Home from "./pages/Home";
+import Home, { FeaturedJobsAndCategoriesLoader } from "./pages/Home";
 import AppliedJobPage from "./pages/AppliedJobPage";
 import JobDetailsPage from "./pages/JobDetailsPage";
 import ErrorPage from "./components/ErrorPage";
-import FeaturedJobsPage from "./pages/FeaturedJobsPage";
-import JobCategoriesPage from "./pages/JobCategoriesPage";
+import FeaturedJobsPage, { FeaturedJobsLoader } from "./pages/FeaturedJobsPage";
+import JobCategoriesPage, {
+  JobCategoriesLoader,
+} from "./pages/JobCategoriesPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
+      <Route
+        index
+        element={<Home />}
+        loader={FeaturedJobsAndCategoriesLoader}
+      />
       <Route path="applied-jobs" element={<AppliedJobPage />} />
-      <Route path="featured-jobs" element={<FeaturedJobsPage />} />
-      <Route path="job-categories" element={<JobCategoriesPage />} />
+      <Route
+        path="featured-jobs"
+        element={<FeaturedJobsPage />}
+        loader={FeaturedJobsLoader}
+      />
+      <Route
+        path="job-categories"
+        element={<JobCategoriesPage />}
+        loader={JobCategoriesLoader}
+      />
       <Route path="job-details/:jobId" element={<JobDetailsPage />} />
       <Route path="*" element={<ErrorPage />} />
     </Route>,
