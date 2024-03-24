@@ -22,3 +22,7 @@ const Home = () => {
 };
 
 export default Home;
+
+// export const FeaturedJobLoader = async () => {
+//   const response = await fetch("./jobs.json");
+// };

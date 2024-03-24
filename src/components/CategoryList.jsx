@@ -1,5 +1,4 @@
 import CategoryCard from "./CategoryCard";
-import SectionHeader from "./SectionHeader";
 import { CiBadgeDollar, CiPen, CiReceipt, CiRouter } from "react-icons/ci";
 
 const CategoryList = () => {

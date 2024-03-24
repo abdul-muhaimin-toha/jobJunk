@@ -9,6 +9,7 @@ import AppliedJobPage from "./pages/AppliedJobPage";
 import JobDetailsPage from "./pages/JobDetailsPage";
 import ErrorPage from "./components/ErrorPage";
 import FeaturedJobsPage from "./pages/FeaturedJobsPage";
+import JobCategoriesPage from "./pages/JobCategoriesPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="applied-jobs" element={<AppliedJobPage />} />
       <Route path="featured-jobs" element={<FeaturedJobsPage />} />
+      <Route path="job-categories" element={<JobCategoriesPage />} />
       <Route path="job-details/:jobId" element={<JobDetailsPage />} />
       <Route path="*" element={<ErrorPage />} />
     </Route>,

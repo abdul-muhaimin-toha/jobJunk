@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="Footer-pattern bg-sectionFooter-pattern bg-cover bg-left-top shadow-lg">
+    <div className="Footer-pattern bg-sectionFooter-pattern bg-cover bg-right-top">
       <div className="mx-auto max-w-screen-2xl p-1">
         <footer className="footer flex flex-col justify-between p-10   md:flex-row">
           <aside>
@@ -35,6 +35,14 @@ const Footer = () => {
               }
             >
               Featured Jobs
+            </NavLink>
+            <NavLink
+              to="/job-categories"
+              className={({ isActive }) =>
+                `font-bold hover:bg-transparent hover:text-primary ${isActive ? "text-primary" : ""}`
+              }
+            >
+              Categories
             </NavLink>
             <NavLink
               to="/statistics"
