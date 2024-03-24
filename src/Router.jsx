@@ -14,6 +14,8 @@ import FeaturedJobsPage, { FeaturedJobsLoader } from "./pages/FeaturedJobsPage";
 import JobCategoriesPage, {
   JobCategoriesLoader,
 } from "./pages/JobCategoriesPage";
+import StatisticsPage from "./pages/StatisticsPage";
+import ErrorForJobDetails from "./components/ErrorForJobDetails";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,10 +40,12 @@ const router = createBrowserRouter(
         element={<JobCategoriesPage />}
         loader={JobCategoriesLoader}
       />
+      <Route path="statistics" element={<StatisticsPage />} />
       <Route
         path="job-details/:jobId"
         element={<JobDetailsPage />}
         loader={AllJobsLoader}
+        errorElement={<ErrorForJobDetails />}
       />
       <Route path="*" element={<ErrorPage />} />
     </Route>,
