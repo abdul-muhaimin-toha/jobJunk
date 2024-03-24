@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import ThemeController from "./ThemeController";
 
 const Navbar = () => {
   return (
@@ -133,6 +134,7 @@ const Navbar = () => {
             >
               Apply Now
             </Link>
+            <ThemeController />
           </div>
         </nav>
       </div>
